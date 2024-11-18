@@ -1,0 +1,33 @@
+.card-top__background {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;}
+
+.card-top__background.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card-top {
+    row-gap: 2rem;
+    width: 90% !important;
+    margin: auto !important;
+    margin-top: 2.5rem !important;
+    margin-bottom: 2rem !important;
+}
+
+.content-topMovies h5{
+    padding: .6rem .4rem !important;
+}
+
+.content-topMovies {
+    margin-bottom: 3.5rem;
+}
+
+@media(max-width:576px){
+    .card-top {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+}

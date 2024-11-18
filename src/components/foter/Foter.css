@@ -1,0 +1,43 @@
+
+
+.foter-main{
+    height: 7vh;
+    background-color: var(--primary);
+    color: whitesmoke;
+    padding: 5px 0;
+    display: flex;
+  
+ 
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.copywriting p {
+    font-weight: bold;
+    margin: .3rem 0 !important;
+}
+.icons{
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons i {
+    background-color: white;
+    color: var(--primary);
+    padding: 3px 4px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* إضافة تأثير انتقال سلس */
+
+}
+
+.icons i:hover {
+    transform: scale(1.2);
+}

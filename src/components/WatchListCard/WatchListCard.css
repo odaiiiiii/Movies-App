@@ -1,0 +1,39 @@
+.card-WatchListCard {
+  height: 300px; /* تثبيت الطول إلى 300 بكسل */
+  margin-bottom: 20px; /* مسافة سفلية بين الكاردات */
+  position: relative;
+  overflow: hidden; /* لضمان عدم تجاوز المحتوى للحواف */
+}
+
+.card-WatchListCard img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease; /* إضافة تأثير سلس */
+  filter: brightness(.6);
+}
+
+.card-WatchListCard:hover img {
+  filter: brightness(1.2); /* زيادة السطوع عند التمرير على الصورة */
+  transform: scale(1.05); /* تكبير الصورة قليلاً عند التمرير */
+  cursor: pointer;
+}
+
+.movie-controls {
+  position: absolute; /* المكون سيكون فوق الصورة */
+  bottom: 10%; /* مسافة 10% من الأسفل */
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center; /* توسيط المحتوى */
+  opacity: 0; /* جعل العناصر غير مرئية بشكل افتراضي */
+  transition: all 0.3s ease; /* إضافة تأثير سلس */
+}
+
+.card-WatchListCard:hover .movie-controls {
+  opacity: 1; /* جعل عناصر الـ MovieControles تظهر عند التمرير */
+}
+
+.card-WatchListCard:hover {
+  /* التأثيرات التي تطرأ على الصورة عند التمرير على الكارد */
+  background-color: rgba(0, 0, 0, 0.8); /* الخلفية تصبح شفافة قليلاً عند التمرير */
+}

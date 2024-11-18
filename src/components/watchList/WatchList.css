@@ -1,0 +1,59 @@
+
+
+.WatchListPage{
+    margin-top: 2.5rem;
+    display: block;
+    margin-bottom: 2.5rem;
+}
+
+.myWatchlist-Sec{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    
+}
+
+.myWatchlist-Sec span{
+
+    background-color: var(--primary);
+    color: white;
+}
+  
+.all-cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 25px !important;
+    row-gap: 10px;
+   padding: 30px 10px;
+   
+}
+.myWatchlist-Sec h3 {
+    color:var(--primary);
+}
+
+
+
+
+
+
+
+@media(max-width:767px){
+    .all-cards {
+       
+        column-gap: 10px !important;
+        justify-content: space-between;
+       
+    }
+}
+
+
+
+@media(max-width:576px){
+    .all-cards {     
+        column-gap: 1px !important;
+        justify-content: center;
+       
+    }
+}

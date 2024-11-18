@@ -1,0 +1,17 @@
+
+
+.ctrl-btn{
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 2px 8px ;
+}
+
+.ctrl-btn i {
+    color: rgb(145, 143, 143);
+    transition: .7s;
+}
+ 
+.ctrl-btn i:hover {
+    color: white;
+}
+

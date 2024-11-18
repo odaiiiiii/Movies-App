@@ -1,0 +1,160 @@
+
+
+/*welcomeSection*/
+.welcomeSection{
+    display: block;
+    margin-top: 3.5rem;
+}
+
+.welcomeSection {
+    position: relative; /* لضبط الطبقة الشفافة فوق الصورة */
+    background-image: url('../../images/welcome1.jpg'); /* مسار الصورة */
+    background-size: cover; /* لتغطية كامل الخلفية بالصورة */
+    background-position: center; /* لضبط الصورة في المنتصف */
+    background-repeat: no-repeat; /* لمنع تكرار الصورة */
+    color: white; /* يجعل النص أبيض للحصول على تباين مناسب */
+    padding: 50px 20px; /* لضبط المسافات الداخلية */
+    width: 100%;
+    height: 75vh; /* لتحديد ارتفاع القسم */
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5); /* إضافة ظل داخلي لتوضيح النص */
+    
+  }
+
+
+  .welcomeSection::before {
+    content: ''; /* يحتوي على المحتوى الفارغ */
+    position: absolute; /* يضع الطبقة في موضع ثابت */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* طبقة شفافة (يمكنك تعديل الشفافية) */
+    z-index: 1; /* جعل الطبقة في الخلف */
+    backdrop-filter: blur(1px); /* تمويه للخلفية */
+
+  }
+
+  .welcomeSection h1 {
+    padding-left: 10px;
+    margin-bottom: 3.5rem;
+
+  }
+  
+
+
+
+.welcomeSection-paragraphs{
+  padding-left: 10px ;
+  padding: 0 25px;
+  width: 90%;
+}
+.welcomeSection-paragraphs p {
+  margin-top: 3rem;
+  font-size: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  color: whitesmoke;
+}
+
+
+.welcomeSection h1,.welcomeSection p{
+    position: relative; /* لضمان أن النص يظهر فوق الطبقة */
+    z-index: 2; /* لضمان أن النص يكون فوق الطبقة الشفافة */
+}
+
+
+
+
+/*moviesTypeSection*/
+
+.moviesTypeSection{
+    display: block;
+    margin-top: 3.5rem;
+    color: var(--primary);
+}
+
+
+
+
+
+.movies-type{
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+
+
+
+@media(max-width:992px){
+  .welcomeSection h1 {
+    padding-left: 5px;
+    margin-bottom: 2rem  !important;
+    font-size: 28px;
+  }
+
+  .welcomeSection-paragraphs p {
+    margin-top: 2rem;
+    font-size: 19px;
+  }
+}
+
+
+
+
+@media(max-width:767px){
+  .welcomeSection h1 {
+    padding-left: 5px;
+    margin-bottom: 2rem  !important;
+    font-size: 23px;
+  }
+
+  .welcomeSection-paragraphs p {
+    margin-top: 1.5rem;
+    font-size: 16px;
+
+  }
+
+  .welcomeSection-paragraphs{
+    padding-left: 10px  !important;
+    width: 100%;
+  }
+
+  
+.moviesTypeSection h2{
+  font-size: 24px;
+ }
+ .moviesTypeSection h5{
+  font-size: 17px;
+ }
+}
+
+
+
+
+@media(max-width:576px){
+  .welcomeSection h1 {
+    padding-left: 5px;
+    margin-bottom: 2rem  !important;
+    font-size: 20px;
+  }
+
+  .welcomeSection-paragraphs p {
+    margin-top: 2.3rem;
+    font-size: 14px;
+
+  }
+
+  .welcomeSection-paragraphs{
+    padding-left: 10px  !important;
+    width: 100%;
+  }
+
+  .moviesTypeSection h2{
+    font-size: 22px;
+   }
+   .moviesTypeSection h5{
+    font-size: 15px;
+   }
+}
+

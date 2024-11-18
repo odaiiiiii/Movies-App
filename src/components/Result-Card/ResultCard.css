@@ -1,0 +1,163 @@
+
+
+.card-content{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    height: 125px;
+    margin: 1.5rem 0;
+    box-shadow: 0 0 10px rgba(3, 3, 97, 0.3);
+    
+}
+
+
+
+.card-content img{
+   width: 90px;
+   height: 100%;
+}
+
+.card-title-year p {
+    margin: 0; /* إزالة أي مسافة خارجية */
+    line-height: 1.2; /* تقليل المسافة بين الأسطر */
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.card-title-year p:nth-child(2) {
+    color: rgb(112, 112, 112);
+    font-size: 13px;
+
+}
+
+
+
+.card-content-btn{
+    display: flex;
+    gap: 2rem;
+    margin-top: auto; /* وضع الأزرار في أسفل القسم */
+    margin-bottom: 5px;
+
+}
+
+
+.card-content-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.card-title-year {
+    margin-bottom: auto;
+    margin-top: 5px;
+}
+
+
+
+
+
+/* CSS */
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 120px;
+  padding: 2px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+ 
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 8px 16px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+  font-size: 13px;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+
+
+.button-64:disabled {
+  opacity: 0.5;
+  cursor: not-allowed; 
+  background-color: #ccc; 
+}
+
+
+@media(max-width:530px){
+
+  .card-content{
+    height: 110px;
+  
+    
+}
+  .card-content img{
+    width: 80px;
+    height: 100%;
+ }
+ .card-title-year p {
+  font-size: 13px;
+
+}
+.card-title-year p:nth-child(2) {
+  font-size: 12px;
+
+}
+.card-content-btn{
+    gap: 1rem ;
+}
+
+
+.button-64 {
+  
+
+
+  line-height: .3em;
+  width: 50px !important;
+  padding: 3px 0px;
+  margin-top: 5px;
+  width: 90% !important;
+ 
+}
+.button-64 span {
+ 
+  padding: 8px 10px ;
+  font-size: 12px;
+}
+
+
+
+.card-content-btn{
+  display: block;
+  gap: 0rem;
+
+
+}
+}

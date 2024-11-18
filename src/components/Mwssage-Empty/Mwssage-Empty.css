@@ -1,0 +1,27 @@
+
+
+.meeage-empty {
+    text-align: center;         /* جعل النص في المنتصف */
+    color: var(--primary);      /* تعيين اللون ليكون متغير من نوع primary */
+    font-size: 24px;            /* حجم الخط */
+    font-weight: bold;          /* جعل الخط عريض */
+    margin-top: 5px;           /* إضافة مسافة من الأعلى */
+    padding: 20px;              /* إضافة مسافة داخلية حول النص */
+    background-color: #f4f4f4;  /* خلفية خفيفة لجعل الرسالة تبرز */
+    border-radius: 10px;        /* حواف دائرية */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
+    text-align: center;
+    width: 100%;
+  }
+  
+
+  @media(max-width:500px){
+    
+
+.meeage-empty {
+    
+    font-size: 20px;            
+   
+  }
+  
+  }
